@@ -10,3 +10,19 @@
     margin-top: 20px;
   }
 </style>
+
+<!-- parse out tags, if mapping -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('li, p').forEach(function (el) {
+      // Hide tag:xxx after <a href="geo:..."> pattern, with optional punctuation
+      el.innerHTML = el.innerHTML.replace(
+        /(<a\s+href="geo:[^"]+">[^<]+<\/a>)(\s+tag:[\w-]+)([.,;:]?)/g,
+        function (match, link, tag, punct) {
+          return link + '<span style="display:none">' + tag + '</span>' + (punct || '');
+        }
+      );
+    });
+  });
+</script>
