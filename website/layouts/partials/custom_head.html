@@ -15,10 +15,10 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('li, p').forEach(function (el) {
+    document.querySelectorAll('li, p, h1, h2, h3, h4, h5, h6').forEach(function (el) {
       // Hide tag:xxx after <a href="geo:..."> pattern, with optional punctuation
       el.innerHTML = el.innerHTML.replace(
-        /(<a\s+href="geo:[^"]+">[^<]+<\/a>)(\s+tag:[\w-]+)([.,;:]?)/g,
+        /(<a\s+href="geo:[^"]+">[^<]+<\/a>)\s*(tag:[\w-]+)([.,;:]?)/g,
         function (match, link, tag, punct) {
           return link + '<span style="display:none">' + tag + '</span>' + (punct || '');
         }
