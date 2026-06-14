@@ -1,0 +1,85 @@
+<div id="map"></div>
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Leaflet.ExtraMarkers JS -->
+<script src="https://unpkg.com/leaflet-extra-markers@1.2.1/dist/js/leaflet.extra-markers.min.js"></script>
+<script>
+  // Initialize the map WITHOUT setView - will auto-fit to data later
+  var map = L.map('map');
+  // Add CartoDB Positron tiles for a clean, minimal map appearance
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+    subdomains: 'abcd',  // Use subdomains a,b,c,d for load balancing
+    maxZoom: 19
+  }).addTo(map);
+  // Function to return custom icons based on location type/tag
+  function getIcon(iconType) {
+    if (iconType === 'city') {
+      // Blue city icon for urban locations
+      return L.ExtraMarkers.icon({
+        icon: 'fa-city',
+        markerColor: 'blue',
+        shape: 'circle',
+        prefix: 'fa'
+      });
+    } else if (iconType === 'country') {
+      // Red flag icon for country-level locations
+      return L.ExtraMarkers.icon({
+        icon: 'fa-flag',
+        markerColor: 'red',
+        shape: 'circle',
+        prefix: 'fa'
+      });
+    } else if (iconType === 'swim') {
+      // Green water icon for swimming locations
+      return L.ExtraMarkers.icon({
+        icon: 'fa-water-ladder',
+        markerColor: 'green',
+        shape: 'circle',
+        prefix: 'fa'
+      });
+    } else if (iconType === 'hiking') {
+      // Orange hiking icon for trail locations
+      return L.ExtraMarkers.icon({
+        icon: 'fa-hiking',
+        markerColor: 'orange',
+        shape: 'circle',
+        prefix: 'fa'
+      });
+    } else {
+      // Default blue marker for unspecified location types
+      return L.ExtraMarkers.icon({
+        icon: 'fa-map-marker-alt',
+        markerColor: 'blue',
+        shape: 'circle',
+        prefix: 'fa'
+      });
+    }
+  }
+  // Load GeoJSON data from local file and add markers to map
+  fetch('places/map.geojson')
+    .then(response => response.json())  // Parse JSON response
+    .then(data => {
+      // Create GeoJSON layer with custom marker styling
+      const geoLayer = L.geoJSON(data, {
+        pointToLayer: function (feature, latlng) {
+          let icon;
+          try {
+            // Get appropriate icon based on feature's iconType property
+            icon = getIcon(feature.properties.iconType);
+          } catch (e) {
+            // Fallback to default icon if error occurs
+            icon = getIcon();
+          }
+          // Create marker with custom icon and popup showing location name
+          return L.marker(latlng, {
+            icon: icon
+          }).bindPopup(feature.properties.name || '');
+        }
+      }).addTo(map);
+      // Auto-fit map view to show all loaded markers with padding
+      if (geoLayer.getLayers().length > 0) {
+        map.fitBounds(geoLayer.getBounds(), { padding: [20, 20] });
+      }
+    });
+</script>
