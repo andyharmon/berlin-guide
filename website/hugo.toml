@@ -2,3 +2,7 @@ baseURL = 'https://example.org/'
 locale = 'en-gb'
 title = "Andy's Berlin Guide"
 theme = 'hugo-bearblog'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
