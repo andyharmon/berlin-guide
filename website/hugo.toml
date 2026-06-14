@@ -1,7 +1,7 @@
 baseURL = 'https://example.org/'
 locale = 'en-gb'
 title = "🇩🇪 andy's berlin guide 🥨"
-theme = 'hugo-bearblog'
+theme = ["hugo-admonitions", "hugo-bearblog"]
 
 [caches]
   [caches.images]
