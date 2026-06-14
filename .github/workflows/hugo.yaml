@@ -41,6 +41,10 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v6
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
       - name: Create directory for user-specific executable files
         run: |
           mkdir -p "${HOME}/.local"
@@ -78,6 +82,7 @@ jobs:
           restore-keys: hugo-
       - name: Build the site
         run: |
+          python3 website/build-map-geojson.py
           hugo build \
             --source website/ \
             --gc \
