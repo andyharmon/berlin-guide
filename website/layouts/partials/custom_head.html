@@ -1,0 +1,28 @@
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<!-- Leaflet.ExtraMarkers CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet-extra-markers@1.2.1/dist/css/leaflet.extra-markers.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+  #map {
+    width: 80vw;
+    height: 60vh;
+    margin-top: 20px;
+  }
+</style>
+
+<!-- parse out tags, if mapping -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('li, p').forEach(function (el) {
+      // Hide tag:xxx after <a href="geo:..."> pattern, with optional punctuation
+      el.innerHTML = el.innerHTML.replace(
+        /(<a\s+href="geo:[^"]+">[^<]+<\/a>)(\s+tag:[\w-]+)([.,;:]?)/g,
+        function (match, link, tag, punct) {
+          return link + '<span style="display:none">' + tag + '</span>' + (punct || '');
+        }
+      );
+    });
+  });
+</script>
