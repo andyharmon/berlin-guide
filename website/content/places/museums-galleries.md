@@ -31,7 +31,7 @@ Each museum charges a separate entry but if you want to do them all, you can get
 #### [Pergamonmuseum](geo:52.5212526320652,13.396864873124516)tag:museum
 
 > [!warning]
-> The Pergamonmusem is closed until 2017 due to construction work. You can find out more about the works on the [website](https://www.smb.museum/en/museums-institutions/pergamonmuseum/home/).
+> The Pergamonmusem is closed until 2027 due to construction work. You can find out more about the works on the [website](https://www.smb.museum/en/museums-institutions/pergamonmuseum/home/).
 
 This is the last built museum on Museuminsel and houses the great acquisitions of German archaeologists in the 19th and 18th century. The museum has the Pergamonsaal and alter. It is very similar in scale and character to the British museum.
 
