@@ -26,7 +26,7 @@ theme = 'hugo-bearblog'
     weight = 40
   [[menus.main]]
     name = 'drink'
-    pageRef = '/places/drink'
+    pageRef = '/places/drinks'
     weight = 50
 
 [params]
