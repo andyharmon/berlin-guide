@@ -7,3 +7,5 @@
 this is my little guide to berlin based on some places i've been and some places where i want to go.
 
 the map above has everything and the places are detailed in their respective pages.
+
+👾 the code for this site [is on github](https://github.com/andyharmon/berlin-guide/tree/main)
