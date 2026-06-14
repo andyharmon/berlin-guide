@@ -6,7 +6,7 @@ import json
 # Regex pattern to match geo-location markdown links with optional tags
 # Format: [name](geo:lat,lon) tag:tagname
 GEO_LINK_RE = re.compile(
-    r"\[([^\]]+)\]\(geo:([0-9\.\-]+),([0-9\.\-]+)\)(?:\s+tag:([a-zA-Z0-9_-]+))?",
+    r"\[([^\]]+)\]\(geo:([0-9\.\-]+),([0-9\.\-]+)\)\s*(?:tag:([a-zA-Z0-9_-]+))?",
     re.IGNORECASE,
 )
 

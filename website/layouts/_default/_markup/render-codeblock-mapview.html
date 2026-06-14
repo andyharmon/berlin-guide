@@ -14,35 +14,11 @@
   }).addTo(map);
   // Function to return custom icons based on location type/tag
   function getIcon(iconType) {
-    if (iconType === 'city') {
+    if (iconType === 'food ') {
       // Blue city icon for urban locations
       return L.ExtraMarkers.icon({
-        icon: 'fa-city',
-        markerColor: 'blue',
-        shape: 'circle',
-        prefix: 'fa'
-      });
-    } else if (iconType === 'country') {
-      // Red flag icon for country-level locations
-      return L.ExtraMarkers.icon({
-        icon: 'fa-flag',
-        markerColor: 'red',
-        shape: 'circle',
-        prefix: 'fa'
-      });
-    } else if (iconType === 'swim') {
-      // Green water icon for swimming locations
-      return L.ExtraMarkers.icon({
-        icon: 'fa-water-ladder',
+        icon: 'fa-utensils',
         markerColor: 'green',
-        shape: 'circle',
-        prefix: 'fa'
-      });
-    } else if (iconType === 'hiking') {
-      // Orange hiking icon for trail locations
-      return L.ExtraMarkers.icon({
-        icon: 'fa-hiking',
-        markerColor: 'orange',
         shape: 'circle',
         prefix: 'fa'
       });
