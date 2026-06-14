@@ -14,7 +14,7 @@
   }).addTo(map);
   // Function to return custom icons based on location type/tag
   function getIcon(iconType) {
-    if (iconType === 'food ') {
+    if (iconType === 'food') {
       // Blue city icon for urban locations
       return L.ExtraMarkers.icon({
         icon: 'fa-utensils',
@@ -22,7 +22,30 @@
         shape: 'circle',
         prefix: 'fa'
       });
-    } else {
+    }
+    else if (iconType === 'bar') {
+      return L.ExtraMarkers.icon({
+        icon: 'fa-martini-glass',
+        markerColor: 'purple',
+        shape: 'circle',
+        prefix: 'fa'
+      });
+    } else if (iconType === "museum") {
+      return L.ExtraMarkers.icon({
+        icon: 'fa-building-columns',
+        markerColor: 'blue',
+        shape: 'circle',
+        prefix: 'fa'
+      });
+    } else if (iconType === "gallery") {
+      return L.ExtraMarkers.icon({
+        icon: 'fa-palette',
+        markerColor: 'blue',
+        shape: 'circle',
+        prefix: 'fa'
+      });
+    }
+    else {
       // Default blue marker for unspecified location types
       return L.ExtraMarkers.icon({
         icon: 'fa-map-marker-alt',

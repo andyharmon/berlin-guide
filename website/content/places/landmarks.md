@@ -1,6 +1,7 @@
 ---
 locations:
 ---
+
 ## Mitte
 
 [Brandenburg Gate](geo:52.516392119744445,13.377671913529088)
@@ -28,7 +29,7 @@ Berlin City Hall which is very impressive. There's a few exhibitions inside.
 The building of the Bundestag, the Parliament of the German Federal Government. There is a glass dome design by Norman Foster which you can visit with multiple slots per day. Wednesday is typically the Bundestag's Plenary which you can sit in. It's completely free.
 
 [Soviet War Memorial](geo:52.516890020100355,13.3718696365342)
-One of the three memorials erected by the Soviet Union to commemorate its war dead. A treaty between Germany and Russia mandates the German government keep it in a good state of repair. 
+One of the three memorials erected by the Soviet Union to commemorate its war dead. A treaty between Germany and Russia mandates the German government keep it in a good state of repair.
 
 [Neue Synagoge](geo:52.525001658704035,13.394119691315407)
 Built in the 1800s, it is a stunning building that has somehow survived the Nazis and the war. There is a museum about its history (especially during the Nazi era) and you can access the dome.
@@ -41,7 +42,7 @@ A baroque summer palace with a large gardens. You can visit the palace itself wh
 [Kaiser-Wilhelm Memorial Church](geo:52.504926737836584,13.335107902917342)
 A memorial church to Kaiser Wilhelm I (not the last one!) It was built between 1891 and 1906 but badly damaged during the war. Rather than rebuilt, a modern place of worship was built and the remains of the tower serve as an exhibition place. Both are free to visit.
 
-[Gedenkstätte Plötzensee *Plötzensee Prison*](geo:52.54095885888448,13.322771813827067)
+[Gedenkstätte Plötzensee _Plötzensee Prison_](geo:52.54095885888448,13.322771813827067)
 A somewhat forgotten memorial to the victims of the Nazi's in the place of a former execution room where nearly 2,900 people were executed during the regime. Next to the real, operational prison of the same name.
 
 [Olympiastadion](geo:52.51537611755836,13.239070627339224)
@@ -56,7 +57,7 @@ Berlin's gay quarter, if such a thing can exist in a city like Berlin.
 The site of a the only border crossing between East and West Berlin that allowed passage for foreigners (but not Berliners). The guardhouse here is a replica but the signage is authentic. Included here performatively - it really is not worth going out of your way for and it's really popular with tourists (especially American tourists)
 
 [East Side Gallery](geo:52.50524446770854,13.439793212476937)
-The longest stretch of the Berlin Wall still in existence. These murals are painted on the East Side so are not from the Cold War. Free to visit. 
+The longest stretch of the Berlin Wall still in existence. These murals are painted on the East Side so are not from the Cold War. Free to visit.
 
 ## East (Lichtenberg, Marzahn-Hellersdorf and Pankow)
 
