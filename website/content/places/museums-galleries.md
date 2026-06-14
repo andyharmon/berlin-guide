@@ -2,6 +2,8 @@
 locations:
 ---
 
+# Museums and Galleries
+
 ## Mitte
 
 ### [Samurai Museum](geo:52.52697258264584,13.395316257592714)tag:museum
@@ -129,4 +131,4 @@ A museum describing the tactics of the Stasi, the secret police in East Germany.
 
 ### [Karlshorst Museum](geo:52.48651358787686,13.539659883413337)tag:museum
 
-Museum documenting the war on the Eastern front between G---ermany and the USSR and the relationship between the GDR/Germany and the USSR/Russia since.
+Museum documenting the war on the Eastern front between Germany and the USSR and the relationship between the GDR/Germany and the USSR/Russia since.

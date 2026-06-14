@@ -2,17 +2,21 @@
 locations: ""
 ---
 
+# Food
+
 ## Breakfast and Lunch
 
 ### Brammibal's Donuts
 
-Multiple locations:
-[Maybachufer](geo:52.49990821943126,13.42023772041405)tag:coffee
-[Potsdamer Platz](geo:52.511492242717324,13.376060761788427)tag:coffee
-[Friedrichshain](geo:52.51777426608225,13.451995079199712)tag:coffee
-[Prenzlauer Berg](geo:52.54367235477284,13.423155967216859)tag:coffee
-[Alexanderplatz](geo:52.526569854349134,13.406138376397678)tag:coffee
 Vegan donuts and good coffee. Great for breakfast.
+
+Multiple locations:
+
+- [Maybachufer](geo:52.49990821943126,13.42023772041405)tag:coffee
+- [Potsdamer Platz](geo:52.511492242717324,13.376060761788427)tag:coffee
+- [Friedrichshain](geo:52.51777426608225,13.451995079199712)tag:coffee
+- [Prenzlauer Berg](geo:52.54367235477284,13.423155967216859)tag:coffee
+- [Alexanderplatz](geo:52.526569854349134,13.406138376397678)tag:coffee
 
 ### [Curry Baude](geo:52.55002798913846,13.387025815442339)tag:food
 
@@ -24,10 +28,12 @@ Total vegan restaurant in Neukölln that does brunch every day. Does small plate
 
 ### Curry 61
 
-Multiple locations:
-[Hackeschuer Markt](geo:52.52385476093479,13.400761297093549)tag:food
-[Alexanderplatz](geo:52.521093304487664,13.414426330573434)tag:food
 Curry counter. Does a vegan wurst!
+
+Multiple locations:
+
+- [Hackeschuer Markt](geo:52.52385476093479,13.400761297093549)tag:food
+- [Alexanderplatz](geo:52.521093304487664,13.414426330573434)tag:food
 
 ### [Smooches Sandwiches](geo:52.49564705738513,13.429612223803185)tag:food
 
@@ -72,11 +78,13 @@ Pizza restaurant serving different pizzas and Italian dishes. Serves vegan pizza
 
 ### Burgermeister
 
-Multiple locations
-[Schlesisches Tor](geo:52.50174510907043,13.442639476924818)tag:food
-[Alexanderplatz](geo:52.520623830263354,13.413185015543961)tag:food
-[Schönhauser Allee](geo:52.541067012660676,13.412500654163109)tag:food
 Chain of burger restaurants. Does vegetarian patties.
+
+Multiple locations:
+
+- [Schlesisches Tor](geo:52.50174510907043,13.442639476924818)tag:food
+- [Alexanderplatz](geo:52.520623830263354,13.413185015543961)tag:food
+- [Schönhauser Allee](geo:52.541067012660676,13.412500654163109)tag:food
 
 ### [Lia's Kitchen](geo:52.49159751290602,13.413752148976974)tag:food
 
